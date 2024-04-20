@@ -46,7 +46,7 @@ def main ():
                         for word in words:
                             length = len(word)
                             word_length_counts[length] = word_length_counts.get(length, 0) + 1    
-                        print (40*"-" + "\n", "LEN|"," OCURENCES"," |NR.\n", 40*"-") 
+                        print (40*"-" + "\n", "LEN|"," OCURENCES"," |NR.\n",40*"-") 
 
                         for length, count in sorted(word_length_counts.items()):
                             print(f"{length:2}|{'*' * count:15}|{count:3}")  
